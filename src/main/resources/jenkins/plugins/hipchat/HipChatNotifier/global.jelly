@@ -7,7 +7,7 @@
             <f:checkbox name="hipchat.v2Enabled" checked="${descriptor.v2Enabled}"/>
         </f:entry>
         <f:entry title="${%API Token}" help="/plugin/hipchat/help-globalConfig-hipChatToken.html">
-            <f:textbox name="hipchat.token" value="${descriptor.token}" />
+            <f:password name="hipchat.token" value="${descriptor.token}" />
         </f:entry>
         <f:entry title="${%Room}" help="/plugin/hipchat/help-globalConfig-hipChatRoom.html">
             <f:textbox name="hipchat.room" value="${descriptor.room}" />

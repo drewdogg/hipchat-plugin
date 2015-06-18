@@ -45,6 +45,7 @@ public class HipChatV2Service extends HipChatService {
 
                 JSONObject notification = new JSONObject();
                 notification.put("message", message);
+                notification.put("message_format", "text");
                 notification.put("color", color);
                 notification.put("notify", notify);
                 post.setRequestEntity(new StringRequestEntity(notification.toString(), "application/json", "UTF-8"));
